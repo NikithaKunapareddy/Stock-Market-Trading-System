@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <stdexcept> // For standard exceptions
+#include <iomanip>   // For formatted output
 
 using namespace std;
 
@@ -30,7 +31,8 @@ public:
 
     void Display() {
         cout << "Stock ID: " << stockID << ", Name: " << name
-             << ", Price: $" << price << ", Volume: " << volume << endl;
+             << ", Price: $" << fixed << setprecision(2) << price 
+             << ", Volume: " << volume << endl;
     }
 };
 
@@ -55,7 +57,7 @@ public:
             cout << "Stock ID: " << portfolio[i].first
                  << ", Quantity: " << portfolio[i].second << endl;
         }
-        cout << "Available Balance: $" << balance << endl;
+        cout << "Available Balance: $" << fixed << setprecision(2) << balance << endl;
     }
 
     virtual bool Buy(Stock& stock, int quantity) {
