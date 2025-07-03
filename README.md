@@ -84,13 +84,16 @@ g++ -std=c++11 -o trading_system code.cpp
 
 ## 📊 Default Stock Data
 
-The system comes pre-loaded with popular stocks:
+The system comes pre-loaded with popular tech stocks:
 
 | Stock ID | Symbol | Price | Available Volume |
 |----------|---------|-------|------------------|
 | 1        | AAPL    | $150.00 | 1000 shares |
 | 2        | GOOGL   | $2800.00 | 500 shares |
 | 3        | AMZN    | $3500.00 | 300 shares |
+| 4        | MSFT    | $380.00 | 800 shares |
+| 5        | TSLA    | $250.00 | 600 shares |
+| 6        | NVDA    | $900.00 | 400 shares |
 
 ## 🔧 Usage Examples
 

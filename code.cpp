@@ -222,9 +222,13 @@ public:
 int main() {
     try {
         Market market;
+        // Add popular tech stocks
         market.AddStock(Stock(1, "AAPL", 150.0, 1000));
         market.AddStock(Stock(2, "GOOGL", 2800.0, 500));
         market.AddStock(Stock(3, "AMZN", 3500.0, 300));
+        market.AddStock(Stock(4, "MSFT", 380.0, 800));
+        market.AddStock(Stock(5, "TSLA", 250.0, 600));
+        market.AddStock(Stock(6, "NVDA", 900.0, 400));
 
         // Input for broker's balance and commission rate
         double initialBalance, commissionRate;
